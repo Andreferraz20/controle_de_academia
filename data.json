@@ -1,0 +1,13 @@
+{
+    "instructors": [
+        {
+            "id": 1,
+            "name": "123",
+            "avatar_url": "http://google.com",
+            "birth": 1609286400000,
+            "gender": "M",
+            "services": "sqe213",
+            "created_at": 1609947606141
+        }
+    ]
+}
