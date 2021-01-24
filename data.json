@@ -2,7 +2,7 @@
     "instructors": [
         {
             "id": "1",
-            "name": "Andre Ferraz",
+            "name": "Andre Ferraz5",
             "avatar_url": "http://google.com",
             "birth": 816825600000,
             "gender": "M",
@@ -35,6 +35,24 @@
             "created_at": 1611499485186,
             "gender": "M",
             "services": "Musculação, Crossfit"
+        },
+        {
+            "id": 5,
+            "name": "Beatriz",
+            "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+            "birth": 788918400000,
+            "created_at": 1611501006700,
+            "gender": "M",
+            "services": "musculação, hidro, pilates"
+        },
+        {
+            "id": 6,
+            "name": "Beatriz",
+            "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+            "birth": 788918400000,
+            "created_at": 1611501024401,
+            "gender": "M",
+            "services": "musculação, hidro, pilates"
         }
     ]
 }

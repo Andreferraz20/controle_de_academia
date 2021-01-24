@@ -35,8 +35,6 @@ exports.post = (req, res) => {
 
         return res.redirect("/instructors")
     })
-
-    return res.send(req.body)
 }
 
 exports.show = (req, res) => {
@@ -76,15 +74,13 @@ exports.edit = (req, res) =>{
         birth: date(foundInstructor.birth)
     }
 
-    console.log(instructor)
-
     return res.render("instructors/edit", { instructor })
 }
 
 exports.put = (req, res) =>{
     const {id} = req.body;
     let  index = 0
-    
+
     const foundInstructor = data.instructors.find((instructor, foundIndex) => {
         if(id == instructor.id){
             index = foundIndex;
