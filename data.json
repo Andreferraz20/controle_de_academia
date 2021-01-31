@@ -38,6 +38,27 @@
         }
     ],
     "members": [
-        
+        {
+            "avatar_url": "https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80",
+            "name": "Andre Luiz",
+            "email": "luizlopesferraz22@gmail.com",
+            "birth": 816825600000,
+            "gender": "M",
+            "blood": "B+",
+            "weight": "124",
+            "height": "180",
+            "id": 1
+        },
+        {
+            "id": 2,
+            "avatar_url": "https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80",
+            "name": "Beatriz Luize",
+            "email": "bialuize@gmail.com",
+            "birth": 1100908800000,
+            "gender": "F",
+            "blood": "AB+",
+            "weight": "70",
+            "height": "166"
+        }
     ]
 }

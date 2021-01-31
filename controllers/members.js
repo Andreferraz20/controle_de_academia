@@ -15,19 +15,18 @@ exports.post = (req, res) => {
         }
     }
 
-    let { avatar_url, birth, name, gender } = req.body
+    birth = Date.parse(req.body.birth);
+    let id = 1
+    const lastMember = data.members[data.members.length -1];
 
-    birth = Date.parse(birth);
-    const created_at = Date.now();
-    const id = Number(data.members.length +1);
+    if(lastMember){
+        id = lastMember.id +1;
+    }
 
     data.members.push({
         id,
-        name,
-        avatar_url,
-        birth,
-        created_at,
-        gender,
+        ...req.body,
+        birth
     })
     
     fs.writeFile("data.json", JSON.stringify(data, null, 4), (err) =>{
@@ -35,7 +34,6 @@ exports.post = (req, res) => {
         
         return res.redirect(`/members/${id}`)
     })
-
 }
 
 exports.create = (req, res) => res.render("members/create")
@@ -52,7 +50,7 @@ exports.show = (req, res) => {
 
     const member = {
         ...foundMember,
-        age: age(foundMember.birth),
+        birth: date(foundMember.birth).birthDay,
     }
 
     return res.render("members/show", {member})
@@ -72,7 +70,7 @@ exports.edit = (req, res) =>{
     
     const member = {
         ...foundMember,
-        birth: date(foundMember.birth),
+        birth: date(foundMember.birth).iso,
     }
 
     return res.render("members/edit", { member })
