@@ -1,16 +1,13 @@
 const exppress = require('express');
-const instructors = require('./instructors');
+const instructors = require('./controllers/instructors');
+const members = require('./controllers/members');
 const routes = exppress.Router();
 
 routes.get('/',  (req, res) => res.redirect("/instructors"));
 
-routes.get('/instructors',  (req, res) => 
-    res.render("instructors/index")
-);
+routes.get('/instructors',  instructors.index);
 
-routes.get('/instructors/create',  (req, res) => 
-    res.render("instructors/create")
-);
+routes.get('/instructors/create', instructors.create);
 
 routes.get('/instructors/:id', instructors.show)
 
@@ -20,8 +17,29 @@ routes.post('/instructors',  instructors.post);
 
 routes.put('/instructors',  instructors.put);
 
-routes.get('/members',  (req, res) => 
-    res.send("members")
-);
+routes.delete('/instructors', instructors.delete)
+
+/* members */ 
+
+routes.get('/members',  members.index);
+
+routes.get('/members/create',  members.create);
+
+routes.get('/members/:id', members.show)
+
+routes.get('/members/:id/edit', members.edit)
+
+routes.post('/members',  members.post);
+
+routes.put('/members',  members.put);
+
+routes.delete('/members', members.delete)
+
+
+
+
+
+
+
 
 module.exports = routes;

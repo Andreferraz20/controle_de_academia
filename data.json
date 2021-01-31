@@ -1,16 +1,7 @@
 {
     "instructors": [
         {
-            "id": "1",
-            "name": "Andre Ferraz5",
-            "avatar_url": "http://google.com",
-            "birth": 816825600000,
-            "gender": "M",
-            "services": "Musculação, Crossfit",
-            "created_at": 1609947606141
-        },
-        {
-            "id": 2,
+            "id": 1,
             "name": "Margareth",
             "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
             "birth": -57974400000,
@@ -19,7 +10,7 @@
             "services": "musculação, hidro, pilates"
         },
         {
-            "id": 3,
+            "id": 2,
             "name": "Andre Luiz Lopes Ferraz",
             "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
             "birth": 816825600000,
@@ -28,31 +19,25 @@
             "services": "musculação, hidro, pilates"
         },
         {
+            "id": 3,
+            "name": "Tamires",
+            "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+            "birth": 857779200000,
+            "created_at": 1612104090831,
+            "gender": "F",
+            "services": "Pilares, crossfit"
+        },
+        {
             "id": 4,
-            "name": "Andre Ferraz2",
-            "avatar_url": "http://google.com",
-            "birth": 1609286400000,
-            "created_at": 1611499485186,
-            "gender": "M",
-            "services": "Musculação, Crossfit"
-        },
-        {
-            "id": 5,
-            "name": "Beatriz",
+            "name": "Beatriz Luize",
             "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
-            "birth": 788918400000,
-            "created_at": 1611501006700,
-            "gender": "M",
-            "services": "musculação, hidro, pilates"
-        },
-        {
-            "id": 6,
-            "name": "Beatriz",
-            "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
-            "birth": 788918400000,
-            "created_at": 1611501024401,
-            "gender": "M",
+            "birth": 1102291200000,
+            "created_at": 1612104491698,
+            "gender": "F",
             "services": "musculação, hidro, pilates"
         }
+    ],
+    "members": [
+        
     ]
 }
