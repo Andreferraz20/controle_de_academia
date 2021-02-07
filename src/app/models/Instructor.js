@@ -5,9 +5,11 @@ const {age, date} = require('../../lib/utils');
 module.exports = {
     all(callback) {
         db.query(`
-                        SELECT * 
+                        SELECT instructors.*, COUNT(members.name) AS total_students
                         FROM instructors
-                        ORDER BY name ASC `, (err, results)=>{
+                        LEFT JOIN members ON (members.instructor_id = instructors.id)
+                        GROUP BY instructors.id
+                        ORDER BY total_students DESC `, (err, results)=>{
             if(err) throw `Database Error! ${err}`;
             
             callback(results.rows);
